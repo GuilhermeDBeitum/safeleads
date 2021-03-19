@@ -24,15 +24,15 @@
           </v-list>
         </v-menu>
 
-        <v-navigation-drawer stateless touchless clipped permanent width="275">
-          <v-list nav class="mainText">
+        <v-list dense class="mainText">
+          <v-list-item-group v-model="selectedItem" color="black">
             <v-list-item v-for="item in items" :key="item.title" link>
               <v-list-item-content>
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
+          </v-list-item-group>
+        </v-list>
       </v-card>
     </v-col>
   </v-container>
@@ -42,6 +42,7 @@
 export default {
   data() {
     return {
+      selectedItem: 0,
       items: [
         { title: "Dados do Projeto" },
         { title: "Visão Geral" },
@@ -95,6 +96,5 @@ export default {
 
 .mainText {
   margin-left: 40px;
-  font-size: 14px;
 }
 </style>
