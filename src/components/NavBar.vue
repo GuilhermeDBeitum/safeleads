@@ -1,7 +1,7 @@
 <template>
-  <v-container class="flex">
-    <v-col>
-      <v-card height="500" width="275" class="mx-auto">
+  <v-card height="500" width="265">
+    <v-col md="12">
+      <v-card height="470" width="264">
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
             <v-btn color="#9b0b9b" v-bind="attrs" v-on="on" depressed dark>
@@ -35,7 +35,7 @@
         </v-list>
       </v-card>
     </v-col>
-  </v-container>
+  </v-card>
 </template>
 
 <script>
@@ -69,6 +69,21 @@ export default {
 </script>
 
 <style scoped>
+.align {
+  margin-top: -40px;
+}
+
+.btnText {
+  margin-right: 90px;
+  font-weight: 300;
+}
+
+.cardText {
+  cursor: pointer;
+  margin: -25px;
+  font-size: 14px;
+}
+
 .flex {
   align-content: left;
 }
@@ -83,18 +98,8 @@ export default {
   margin: 5px;
 }
 
-.btnText {
-  margin-right: 120px;
-  font-weight: 300;
-}
-
-.cardText {
-  cursor: pointer;
-  margin: -25px;
-  font-size: 14px;
-}
-
 .mainText {
   margin-left: 40px;
+  width: 180px;
 }
 </style>

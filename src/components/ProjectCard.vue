@@ -1,182 +1,296 @@
 <template>
   <v-container class="flex">
-    <v-col class="container">
-      <v-card class="mx-auto" height="380px" max-width="800" outlined>
-        <div class="my-3"></div>
-        <v-list-item three-line>
-          <v-list-item-avatar tile class="icon"
-            ><v-icon class="icon">
-              mdi-image-size-select-actual</v-icon
-            ></v-list-item-avatar
-          >
+    <v-col>
+      <v-row no-gutters>
+        <v-col cols="12" sm="6" md="7">
+          <v-card class="mx-auto" height="370px" max-width="680" outlined>
+            <div class="my-3"></div>
+            <v-list-item three-line>
+              <v-list-item-avatar tile class="iconView"
+                ><v-icon class="iconView">
+                  mdi-image-size-select-actual</v-icon
+                ></v-list-item-avatar
+              >
 
-          <v-list-item-content>
-            <v-row no-gutters>
-              <v-col md="3">
-                <v-list-item-title class="titleText mb-2">
-                  Nome do Projeto
-                </v-list-item-title>
-              </v-col>
-
-              <v-col md="3">
-                <v-btn text color="#9b0b9b" class="btnSide"> Editar</v-btn>
-              </v-col>
-            </v-row>
-
-            <v-row no-gutters>
-              <v-col md="5">
-                <v-list-item-subtitle class="dateText"
-                  >Criado: 00/00/0000 | Alterado: 00/00/0000
-                </v-list-item-subtitle>
-              </v-col>
-            </v-row>
-
-            <div class="my-5"></div>
-
-            <v-row no-gutters>
-              <v-col>
+              <v-list-item-content>
                 <v-row no-gutters>
-                  <v-col md="3">
-                    <v-list-item-title class="cardText1"
-                      >Tipo:
-                    </v-list-item-title>
-                  </v-col>
-
-                  <v-col md="3">
-                    <div class="my-3"></div>
-                    <span class="cardText2"> Residencial </span>
-                  </v-col>
-                </v-row>
-
-                <v-row no-gutters>
-                  <v-col md="3">
-                    <v-list-item-title class="cardText1"
-                      >Dono:
-                    </v-list-item-title>
-                  </v-col>
-
-                  <v-col md="3">
-                    <div class="my-3"></div>
-                    <span class="cardText2"> Usuário </span>
-                  </v-col>
-                </v-row>
-
-                <v-row no-gutters>
-                  <v-col md="3">
-                    <v-list-item-title class="cardText1"
-                      >Loja:
-                    </v-list-item-title>
-                  </v-col>
-
                   <v-col md="4">
-                    <div class="my-3"></div>
-                    <span class="cardText2"> Nome da Loja </span>
-                  </v-col>
-                </v-row>
-
-                <div class="my-7"></div>
-                <v-list-item-title class="cardText1"
-                  ><p>Previsão de Fechamento:</p>
-                </v-list-item-title>
-
-                <div class="pickerAling"><DataPicker /></div>
-              </v-col>
-
-              <v-col md="2" order="12">
-                <v-list-item-title class="cardText1"
-                  >Tarefas:
-                </v-list-item-title>
-                <div class="my-6"></div>
-                <v-row no-gutters>
-                  <v-col md="6">
-                    <v-card
-                      class="colorBox1"
-                      placeholder="Placeholder"
-                      outlined
-                      dense
-                      ><span>000</span></v-card
-                    >
-                  </v-col>
-                </v-row>
-
-                <v-row no-gutters>
-                  <v-col md="6">
-                    <v-card
-                      class="colorBox2"
-                      placeholder="Placeholder"
-                      outlined
-                      dense
-                      ><span>000</span></v-card
-                    >
-                  </v-col>
-                </v-row>
-
-                <v-row no-gutters>
-                  <v-col md="6">
-                    <v-card
-                      class="colorBox3"
-                      placeholder="Placeholder"
-                      outlined
-                      dense
-                      ><span>000</span></v-card
-                    >
-                  </v-col>
-                </v-row>
-              </v-col>
-              <v-col order="1">
-                <v-row no-gutters>
-                  <v-col md="12">
-                    <v-list-item-title class="cardText1"
-                      ><p>Fluxo de Projeto:</p>
+                    <div class="my-1"></div>
+                    <v-list-item-title class="titleText mb-2">
+                      Nome do Projeto
                     </v-list-item-title>
                   </v-col>
-                  <div class="my-8"></div>
-                  <v-col md="10">
+
+                  <v-col md="3">
+                    <v-btn text color="#9b0b9b" class="btnSide"> Editar</v-btn>
+                  </v-col>
+                </v-row>
+
+                <v-row no-gutters>
+                  <v-col md="6">
                     <v-list-item-subtitle class="dateText"
-                      ><p>
-                        Este projeto não pertence a nenhuma etapa ou status.
-                        Altere abaixo:
-                      </p>
+                      >Criado: 00/00/0000 | Alterado: 00/00/0000
                     </v-list-item-subtitle>
                   </v-col>
-                  <div class="my-6"></div>
-                  <v-col md="12" class="points">
-                    <v-card height="55px" flat class="point">
-                      <v-chip class="chip" color="#136b13" text-color="white">
-                        Proposta Comercial Técnica
-                      </v-chip>
-                    </v-card>
+                </v-row>
 
-                    <v-card-text class="py-0">
-                      <v-timeline dense class="pointLine">
+                <div class="my-5"></div>
+
+                <v-row no-gutters>
+                  <v-col>
+                    <v-row no-gutters>
+                      <v-col md="5">
                         <v-row no-gutters>
-                          <v-col md="1">
-                            <div class="circle"></div>
+                          <v-col md="3">
+                            <v-list-item-title class="cardText1"
+                              >Tipo:
+                            </v-list-item-title>
                           </v-col>
 
+                          <v-col md="3">
+                            <div class="my-3"></div>
+                            <span class="cardText2"> Residencial </span>
+                          </v-col>
+                        </v-row>
+
+                        <v-row no-gutters>
+                          <v-col md="3">
+                            <v-list-item-title class="cardText1"
+                              >Dono:
+                            </v-list-item-title>
+                          </v-col>
+
+                          <v-col md="3">
+                            <div class="my-3"></div>
+                            <span class="cardText2"> Usuário </span>
+                          </v-col>
+                        </v-row>
+
+                        <v-row no-gutters>
+                          <v-col md="3">
+                            <v-list-item-title class="cardText1"
+                              >Loja:
+                            </v-list-item-title>
+                          </v-col>
+
+                          <v-col md="4">
+                            <div class="my-3"></div>
+                            <span class="cardText2"> Nome da Loja </span>
+                          </v-col>
+                        </v-row>
+
+                        <div class="my-7"></div>
+                        <v-list-item-title class="cardText1"
+                          ><p>Previsão de Fechamento:</p>
+                        </v-list-item-title>
+
+                        <div class="pickerAling"><DataPicker /></div>
+                      </v-col>
+
+                      <v-col md="2" order="3">
+                        <v-list-item-title class="cardText1"
+                          >Tarefas:
+                        </v-list-item-title>
+                        <div class="my-6"></div>
+                        <v-row no-gutters>
+                          <v-col md="6">
+                            <v-card
+                              class="colorBox1"
+                              placeholder="Placeholder"
+                              outlined
+                              dense
+                              ><span>000</span></v-card
+                            >
+                          </v-col>
+                        </v-row>
+
+                        <v-row no-gutters>
+                          <v-col md="6">
+                            <v-card
+                              class="colorBox2"
+                              placeholder="Placeholder"
+                              outlined
+                              dense
+                              ><span>000</span></v-card
+                            >
+                          </v-col>
+                        </v-row>
+
+                        <v-row no-gutters>
+                          <v-col md="6">
+                            <v-card
+                              class="colorBox3"
+                              placeholder="Placeholder"
+                              outlined
+                              dense
+                              ><span>000</span></v-card
+                            >
+                          </v-col>
+                        </v-row>
+                      </v-col>
+                      <v-col md="5" order="1">
+                        <v-row no-gutters>
+                          <v-col md="6">
+                            <v-list-item-title class="cardText1"
+                              ><p>Fluxo de Projeto:</p>
+                            </v-list-item-title>
+                          </v-col>
+                          <div class="my-8"></div>
                           <v-col md="11">
-                            <div class="caption">
-                              <h3>Proposta Técnica finalizada</h3>
+                            <v-list-item-subtitle class="dateText"
+                              ><p>
+                                Este projeto não pertence a nenhuma etapa ou
+                                status. Altere abaixo:
+                              </p>
+                            </v-list-item-subtitle>
+                          </v-col>
+                          <div class="my-6"></div>
+                          <v-col md="12" class="points">
+                            <v-card height="55px" flat class="point">
+                              <v-chip
+                                class="chip"
+                                color="#136b13"
+                                text-color="white"
+                              >
+                                Proposta Comercial Técnica
+                              </v-chip>
+                            </v-card>
+
+                            <v-card-text class="py-0">
+                              <v-timeline dense class="pointLine">
+                                <v-row no-gutters>
+                                  <v-col md="1">
+                                    <div class="circle"></div>
+                                  </v-col>
+
+                                  <v-col md="11">
+                                    <div class="caption">
+                                      <strong>
+                                        <h4>
+                                          Proposta Técnica finalizada
+                                        </h4></strong
+                                      >
+                                    </div>
+                                  </v-col>
+                                </v-row>
+                              </v-timeline>
+                            </v-card-text>
+                          </v-col>
+                          <div class="my-8"></div>
+                          <v-col md="3">
+                            <v-btn text color="#9b0b9b" class="btnSide">
+                              Ver Fluxo Completo</v-btn
+                            >
+                          </v-col>
+                        </v-row>
+                      </v-col>
+                    </v-row>
+                  </v-col>
+                </v-row>
+              </v-list-item-content>
+            </v-list-item>
+          </v-card>
+        </v-col>
+        <v-col cols="12" md="5">
+          <v-card class="mx-auto" height="370px" max-width="800" outlined>
+            <div class="my-2"></div>
+            <v-list-item three-line>
+              <v-list-item-avatar min-width="30px"
+                ><v-icon class="iconUser">
+                  mdi-account</v-icon
+                ></v-list-item-avatar
+              >
+
+              <v-list-item-content>
+                <v-row no-gutters>
+                  <v-col md="5">
+                    <div class="my-4"></div>
+                    <v-list-item-title class="titleText mb-2">
+                      <h5>Nome do Lead</h5>
+                    </v-list-item-title>
+                  </v-col>
+
+                  <v-col md="1">
+                    <div class="my-2"></div>
+                    <v-btn text color="#9b0b9b" class="btnSide">
+                      Ver Lead</v-btn
+                    >
+                  </v-col>
+                  <v-btn class="video" color="#1976d2" elevation="2" outlined
+                    ><v-icon class="iconVideo"> mdi-play</v-icon> Video
+                    Tutorial</v-btn
+                  >
+                </v-row>
+
+                <v-row no-gutters>
+                  <v-col md="5">
+                    <v-list-item-subtitle class="dateText"
+                      >Pessoa Fisica
+                    </v-list-item-subtitle>
+                  </v-col>
+                </v-row>
+
+                <div class="my-2"></div>
+
+                <v-row no-gutters>
+                  <v-col>
+                    <v-row no-gutters>
+                      <v-col md="12">
+                        <v-row no-gutters>
+                          <v-col md="2">
+                            <v-list-item-title class="cardText1"
+                              >Celular:
+                            </v-list-item-title>
+                          </v-col>
+
+                          <v-col md="6">
+                            <div class="my-3"></div>
+                            <span class="cardText2"> (00) 9 0000-0000 </span>
+                          </v-col>
+                        </v-row>
+
+                        <v-row no-gutters>
+                          <v-col md="2">
+                            <v-list-item-title class="cardText1"
+                              >E-mail:
+                            </v-list-item-title>
+                          </v-col>
+
+                          <v-col md="6">
+                            <div class="my-3"></div>
+                            <span class="cardText2"> email@email.com.br </span>
+                          </v-col>
+                        </v-row>
+                        <div class="my-7"></div>
+                        <v-row no-gutters>
+                          <v-col cols="12" sm="6" md="6">
+                            <div class="my-7"></div>
+                            <v-list-item-title class="cardText1"
+                              ><p>Responsavel Comercial:</p>
+                            </v-list-item-title>
+
+                            <div class="pickerAling"><DataPicker /></div>
+                          </v-col>
+                          <v-col cols="6" md="6">
+                            <div class="my-7"></div>
+                            <v-list-item-title class="cardText1"
+                              ><p>Responsável Técnico:</p>
+                            </v-list-item-title>
+
+                            <div class="pickerAling">
+                              <DataPicker />
                             </div>
                           </v-col>
                         </v-row>
-                      </v-timeline>
-                    </v-card-text>
-                  </v-col>
-                  <div class="my-8"></div>
-                  <v-col md="3">
-                    <v-btn text color="#9b0b9b" class="btnSide">
-                      Ver Fluxo Completo</v-btn
-                    >
+                      </v-col>
+                    </v-row>
                   </v-col>
                 </v-row>
-              </v-col>
-            </v-row>
-
-            <v-row no-gutters> </v-row>
-          </v-list-item-content>
-        </v-list-item>
-      </v-card>
+              </v-list-item-content>
+            </v-list-item>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-col>
   </v-container>
 </template>
@@ -196,9 +310,9 @@ export default {
 
 <style scoped>
 .btnSide {
-  font-size: 12px;
-  margin-left: -16px;
-  margin-top: -4px;
+  font-size: 11px;
+  margin-left: -25px;
+  margin-top: 2px;
   font-weight: 800;
 }
 
@@ -212,12 +326,8 @@ export default {
   background-color: rgba(255, 255, 255, 0.938);
 }
 
-.container {
-  padding: 20px;
-}
-
 .colorBox1 {
-  text-shadow: 0px 1px #000000;
+  text-shadow: 1px 0px #000000;
   font-size: 13px;
   padding: 8px;
   text-align: center;
@@ -231,7 +341,7 @@ export default {
 }
 
 .colorBox2 {
-  text-shadow: 0px 1px #000000;
+  text-shadow: 1px 0px #000000;
   font-size: 13px;
   padding: 8px;
   text-align: center;
@@ -245,7 +355,7 @@ export default {
 }
 
 .colorBox3 {
-  text-shadow: 0px 1px #000000;
+  text-shadow: 1px 0px #000000;
   font-size: 13px;
   padding: 8px;
   text-align: center;
@@ -262,12 +372,13 @@ export default {
   font-size: 14px;
   font-weight: 600;
   margin-top: 12px;
+  margin-bottom: -12px;
 }
 
 .cardText2 {
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: -20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: -11px;
 }
 
 .chip {
@@ -290,12 +401,32 @@ export default {
   color: #a59aab;
   font-weight: 500;
   margin-top: -5px;
+  padding: 1px;
 }
 
-.icon {
+.iconView {
   color: #a59aab;
   font-size: 45px;
   margin: 10px;
+}
+
+.iconVideo {
+  color: #a59aab;
+  font-size: 14px;
+  margin: 10px;
+  margin-left: 1px;
+  text-shadow: 1px 0px #000000;
+}
+
+.iconUser {
+  color: #000000;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.line {
+  height: 200px;
 }
 
 .titleText {
@@ -320,5 +451,13 @@ export default {
 .pickerAling {
   margin-top: -14px;
   margin-left: -12px;
+}
+
+.video {
+  text-shadow: 1px 0px #000000;
+  margin-left: 60px;
+  font-size: 9px;
+  width: 120px;
+  font-weight: 300;
 }
 </style>
