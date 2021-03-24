@@ -2,7 +2,7 @@
   <v-container class="flex">
     <v-col>
       <v-row no-gutters>
-        <v-col cols="12" sm="6" md="7">
+        <v-col cols="12" sm="12" md="7">
           <v-card class="mx-auto" height="370px" max-width="680" outlined>
             <div class="my-3"></div>
             <v-list-item three-line>
@@ -27,7 +27,7 @@
                 </v-row>
 
                 <v-row no-gutters>
-                  <v-col md="6">
+                  <v-col cols="10" sm="6" md="6">
                     <v-list-item-subtitle class="dateText"
                       >Criado: 00/00/0000 | Alterado: 00/00/0000
                     </v-list-item-subtitle>
@@ -208,25 +208,20 @@
                     <v-list-item-title class="titleText mb-2">
                       <h5>Nome do Lead</h5>
                     </v-list-item-title>
-                  </v-col>
 
-                  <v-col md="1">
-                    <div class="my-2"></div>
-                    <v-btn text color="#9b0b9b" class="btnSide">
-                      Ver Lead</v-btn
+                    <v-col md="12">
+                      <v-list-item-subtitle class="dateText"
+                        >Pessoa Fisica
+                      </v-list-item-subtitle>
+                    </v-col>
+                  </v-col>
+                  <v-btn text color="#9b0b9b" class="btnLead"> Ver Lead</v-btn>
+
+                  <v-col md="1" col="12">
+                    <v-btn class="video" color="#1976d2" elevation="2" outlined
+                      ><v-icon class="iconVideo"> mdi-play</v-icon> Video
+                      Tutorial</v-btn
                     >
-                  </v-col>
-                  <v-btn class="video" color="#1976d2" elevation="2" outlined
-                    ><v-icon class="iconVideo"> mdi-play</v-icon> Video
-                    Tutorial</v-btn
-                  >
-                </v-row>
-
-                <v-row no-gutters>
-                  <v-col md="5">
-                    <v-list-item-subtitle class="dateText"
-                      >Pessoa Fisica
-                    </v-list-item-subtitle>
                   </v-col>
                 </v-row>
 
@@ -311,8 +306,15 @@ export default {
 <style scoped>
 .btnSide {
   font-size: 11px;
-  margin-left: -25px;
+  margin-left: -12px;
   margin-top: 2px;
+  font-weight: 800;
+}
+
+.btnLead {
+  font-size: 10px;
+  margin-left: -45px;
+  margin-top: 12px;
   font-weight: 800;
 }
 
@@ -327,7 +329,7 @@ export default {
 }
 
 .colorBox1 {
-  text-shadow: 1px 0px #000000;
+  text-shadow: 0px 1px #000000;
   font-size: 13px;
   padding: 8px;
   text-align: center;
@@ -341,7 +343,7 @@ export default {
 }
 
 .colorBox2 {
-  text-shadow: 1px 0px #000000;
+  text-shadow: 0px 1px #000000;
   font-size: 13px;
   padding: 8px;
   text-align: center;
@@ -355,7 +357,7 @@ export default {
 }
 
 .colorBox3 {
-  text-shadow: 1px 0px #000000;
+  text-shadow: 0px 1px #000000;
   font-size: 13px;
   padding: 8px;
   text-align: center;
@@ -415,7 +417,7 @@ export default {
   font-size: 14px;
   margin: 10px;
   margin-left: 1px;
-  text-shadow: 1px 0px #000000;
+  text-shadow: 0px 1px 1px #000000;
 }
 
 .iconUser {
@@ -454,10 +456,10 @@ export default {
 }
 
 .video {
-  text-shadow: 1px 0px #000000;
+  text-shadow: 0px 1px 1px #000000;
   margin-left: 60px;
   font-size: 9px;
-  width: 120px;
+  width: 115px;
   font-weight: 300;
 }
 </style>

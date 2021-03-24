@@ -1,7 +1,7 @@
 <template>
-  <v-card height="500" width="265">
+  <v-card class="cardAlign" height="510" width="265">
     <v-col md="12">
-      <v-card height="470" width="264">
+      <v-card class="cardAlign" height="480" width="264">
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
             <v-btn color="#9b0b9b" v-bind="attrs" v-on="on" depressed dark>
@@ -69,8 +69,8 @@ export default {
 </script>
 
 <style scoped>
-.align {
-  margin-top: -40px;
+.cardAlign {
+  margin-top: -5px;
 }
 
 .btnText {
@@ -99,6 +99,7 @@ export default {
 }
 
 .mainText {
+  margin-top: 10px;
   margin-left: 40px;
   width: 180px;
 }
