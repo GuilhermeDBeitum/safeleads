@@ -1,5 +1,8 @@
 # safeleads
 
+![image](https://user-images.githubusercontent.com/54703843/112269208-d3989380-8c56-11eb-8dac-15fcb6a15faf.png)
+
+
 ## Project setup
 ```
 npm install
